@@ -43,6 +43,28 @@ GunModTab:AddLabel("Coming Soon")
 
 -- LocalPlayer
 
+-- Funktion zum Setzen der vollen Gesundheit
+local function SetFullHealth()
+    local player = game.Players.LocalPlayer
+    if player and player.Character and player.Character:FindFirstChild("Humanoid") then
+        local humanoid = player.Character.Humanoid
+        humanoid.Health = humanoid.MaxHealth
+        OrionLib:MakeNotification({
+            Name = "Health Restored!",
+            Content = "Your health has been fully restored.",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+    else
+        OrionLib:MakeNotification({
+            Name = "Error",
+            Content = "Could not restore health.",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+    end
+end
+
 LocalPlayerTab:AddToggle({
     Name = "Anti-Fall",
     Default = false,
@@ -62,16 +84,20 @@ LocalPlayerTab:AddToggle({
 LocalPlayerTab:AddButton({
 	Name = "Heal",
 	Callback = function()
-      		print("button pressed")
+      		SetFullHealth()
   	end    
 })
 
-LocalPlayerTab:AddToggle({
-    Name = "Reset Character",
-    Default = false,
-    Callback = function(value)
-        --function
-    end    
+LocalPlayerTab:AddButton({
+	Name = "Reset Character",
+	Callback = function()
+      		  -- Stellt sicher, dass der Spieler existiert
+				local player = game.Players.LocalPlayer
+				if player and player.Character then
+					-- LocalPlayer stirbt, indem das Humanoid-Gesundheit auf 0 gesetzt wird
+					player.Character.Humanoid.Health = 0
+				end
+			end
 })
 LocalPlayerTab:AddToggle({
     Name = "Bigger Zoom",
