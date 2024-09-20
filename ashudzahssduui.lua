@@ -135,9 +135,9 @@ local script = G2L["4"];
 	local dragging = false
 	local dragInput, mousePos, framePos
 	
-	-- Funktion, die gestartet wird, wenn das Fenster angeklickt wird
+	-- Funktion, die gestartet wird, wenn das Fenster angeklickt/berührt wird
 	local function onInputBegan(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			mousePos = input.Position
 			framePos = gui.Position
@@ -150,9 +150,9 @@ local script = G2L["4"];
 		end
 	end
 	
-	-- Funktion, die aufgerufen wird, wenn sich die Maus bewegt, während das Fenster gezogen wird
+	-- Funktion, die aufgerufen wird, wenn sich die Maus bewegt oder der Finger über den Bildschirm gezogen wird
 	local function onInputChanged(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement then
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
 		end
 	end
