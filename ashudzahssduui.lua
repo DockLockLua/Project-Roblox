@@ -202,7 +202,7 @@ G2L["10"]["Size"] = UDim2.new(0, 74, 0, 40);
 G2L["10"]["Name"] = [[Heal_Button]];
 G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["10"]["Text"] = [[Heal]];
-G2L["10"]["Position"] = UDim2.new(-0.00241, 0, 0.07633, 0);
+G2L["10"]["Position"] = UDim2.new(0.02823, 0, 0.07633, 0);
 
 
 -- StarterGui.Emergency Hamburg Script Gui.Window.LocalPlayer Window.Reset_Character_Button
@@ -217,7 +217,7 @@ G2L["11"]["Size"] = UDim2.new(0, 74, 0, 40);
 G2L["11"]["Name"] = [[Reset_Character_Button]];
 G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["11"]["Text"] = [[Reset Character]];
-G2L["11"]["Position"] = UDim2.new(-0.00519, 0, 0.50242, 0);
+G2L["11"]["Position"] = UDim2.new(0.03102, 0, 0.50242, 0);
 
 
 -- StarterGui.Emergency Hamburg Script Gui.Window.LocalPlayer Window.Anti-Fall_Button
