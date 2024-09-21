@@ -180,17 +180,17 @@ G2L["e"]["Text"] = [[Autofarm]];
 G2L["e"]["Position"] = UDim2.new(0.61046, 0, 0, 0);
 
 
--- StarterGui.Emergency Hamburg Script Gui.Window.LocalPlayer Window
+-- StarterGui.Emergency Hamburg Script Gui.Window.EspFrame
 G2L["f"] = Instance.new("Frame", G2L["2"]);
 G2L["f"]["BorderSizePixel"] = 0;
 G2L["f"]["BackgroundColor3"] = Color3.fromRGB(61, 128, 154);
 G2L["f"]["Size"] = UDim2.new(0, 359, 0, 115);
-G2L["f"]["Position"] = UDim2.new(-0.00279, 0, 0.22222, 0);
+G2L["f"]["Position"] = UDim2.new(0, 0, 0.22222, 0);
 G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Name"] = [[LocalPlayer Window]];
+G2L["f"]["Name"] = [[EspFrame]];
 
 
--- StarterGui.Emergency Hamburg Script Gui.Window.LocalPlayer Window.Heal_Button
+-- StarterGui.Emergency Hamburg Script Gui.Window.EspFrame.ESP_Button
 G2L["10"] = Instance.new("TextButton", G2L["f"]);
 G2L["10"]["TextWrapped"] = true;
 G2L["10"]["BorderSizePixel"] = 0;
@@ -198,14 +198,15 @@ G2L["10"]["TextSize"] = 15;
 G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["10"]["BackgroundColor3"] = Color3.fromRGB(61, 128, 154);
 G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["RichText"] = true;
 G2L["10"]["Size"] = UDim2.new(0, 74, 0, 40);
-G2L["10"]["Name"] = [[Heal_Button]];
+G2L["10"]["Name"] = [[ESP_Button]];
 G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["Text"] = [[Heal]];
-G2L["10"]["Position"] = UDim2.new(0.02823, 0, 0.07633, 0);
+G2L["10"]["Text"] = [[Box ESP]];
+G2L["10"]["Position"] = UDim2.new(0.03943, 0, 0.08792, 0);
 
 
--- StarterGui.Emergency Hamburg Script Gui.Window.LocalPlayer Window.Reset_Character_Button
+-- StarterGui.Emergency Hamburg Script Gui.Window.EspFrame.ESP_Button
 G2L["11"] = Instance.new("TextButton", G2L["f"]);
 G2L["11"]["TextWrapped"] = true;
 G2L["11"]["BorderSizePixel"] = 0;
@@ -213,14 +214,15 @@ G2L["11"]["TextSize"] = 15;
 G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["11"]["BackgroundColor3"] = Color3.fromRGB(61, 128, 154);
 G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["RichText"] = true;
 G2L["11"]["Size"] = UDim2.new(0, 74, 0, 40);
-G2L["11"]["Name"] = [[Reset_Character_Button]];
+G2L["11"]["Name"] = [[ESP_Button]];
 G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Text"] = [[Reset Character]];
-G2L["11"]["Position"] = UDim2.new(0.03102, 0, 0.50242, 0);
+G2L["11"]["Text"] = [[Lines]];
+G2L["11"]["Position"] = UDim2.new(0.03943, 0, 0.5314, 0);
 
 
--- StarterGui.Emergency Hamburg Script Gui.Window.LocalPlayer Window.Anti-Fall_Button
+-- StarterGui.Emergency Hamburg Script Gui.Window.EspFrame.ESP_Button
 G2L["12"] = Instance.new("TextButton", G2L["f"]);
 G2L["12"]["TextWrapped"] = true;
 G2L["12"]["BorderSizePixel"] = 0;
@@ -228,14 +230,15 @@ G2L["12"]["TextSize"] = 15;
 G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["12"]["BackgroundColor3"] = Color3.fromRGB(61, 128, 154);
 G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["RichText"] = true;
 G2L["12"]["Size"] = UDim2.new(0, 74, 0, 40);
-G2L["12"]["Name"] = [[Anti-Fall_Button]];
+G2L["12"]["Name"] = [[ESP_Button]];
 G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Text"] = [[Anti-Fall]];
-G2L["12"]["Position"] = UDim2.new(0.46834, 0, 0.07633, 0);
+G2L["12"]["Text"] = [[Name Esp]];
+G2L["12"]["Position"] = UDim2.new(0.39319, 0, 0.08792, 0);
 
 
--- StarterGui.Emergency Hamburg Script Gui.Window.LocalPlayer Window.Anti-Downed_Button
+-- StarterGui.Emergency Hamburg Script Gui.Window.EspFrame.ESP_Button
 G2L["13"] = Instance.new("TextButton", G2L["f"]);
 G2L["13"]["TextWrapped"] = true;
 G2L["13"]["BorderSizePixel"] = 0;
@@ -243,14 +246,15 @@ G2L["13"]["TextSize"] = 15;
 G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["13"]["BackgroundColor3"] = Color3.fromRGB(61, 128, 154);
 G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["RichText"] = true;
 G2L["13"]["Size"] = UDim2.new(0, 74, 0, 40);
-G2L["13"]["Name"] = [[Anti-Downed_Button]];
+G2L["13"]["Name"] = [[ESP_Button]];
 G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Text"] = [[Anti-Downed]];
-G2L["13"]["Position"] = UDim2.new(0.46834, 0, 0.50242, 0);
+G2L["13"]["Text"] = [[Item Esp]];
+G2L["13"]["Position"] = UDim2.new(0.39319, 0, 0.5314, 0);
 
 
--- StarterGui.Emergency Hamburg Script Gui.Window.LocalPlayer Window.Bigger_Zoom_Button
+-- StarterGui.Emergency Hamburg Script Gui.Window.EspFrame.ESP_Button
 G2L["14"] = Instance.new("TextButton", G2L["f"]);
 G2L["14"]["TextWrapped"] = true;
 G2L["14"]["BorderSizePixel"] = 0;
@@ -258,21 +262,28 @@ G2L["14"]["TextSize"] = 15;
 G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["14"]["BackgroundColor3"] = Color3.fromRGB(61, 128, 154);
 G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["RichText"] = true;
 G2L["14"]["Size"] = UDim2.new(0, 74, 0, 40);
-G2L["14"]["Name"] = [[Bigger_Zoom_Button]];
+G2L["14"]["Name"] = [[ESP_Button]];
 G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["Text"] = [[Bigger Zoom]];
-G2L["14"]["Position"] = UDim2.new(0.77475, 0, 0.31981, 0);
+G2L["14"]["Text"] = [[Skeleton Esp]];
+G2L["14"]["Position"] = UDim2.new(0.74138, 0, 0.08792, 0);
 
 
--- StarterGui.Emergency Hamburg Script Gui.Window.linie
-G2L["15"] = Instance.new("Frame", G2L["2"]);
+-- StarterGui.Emergency Hamburg Script Gui.Window.EspFrame.ESP_Button
+G2L["15"] = Instance.new("TextButton", G2L["f"]);
+G2L["15"]["TextWrapped"] = true;
 G2L["15"]["BorderSizePixel"] = 0;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["Size"] = UDim2.new(0, 6, 0, 115);
-G2L["15"]["Position"] = UDim2.new(0.43175, 0, 0.22222, 0);
+G2L["15"]["TextSize"] = 15;
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(61, 128, 154);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["RichText"] = true;
+G2L["15"]["Size"] = UDim2.new(0, 74, 0, 40);
+G2L["15"]["Name"] = [[ESP_Button]];
 G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Name"] = [[linie]];
+G2L["15"]["Text"] = [[ShowOnlyMyTeam]];
+G2L["15"]["Position"] = UDim2.new(0.74138, 0, 0.5314, 0);
 
 
 -- StarterGui.Emergency Hamburg Script Gui.Window.LocalScript
